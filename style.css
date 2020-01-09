@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    border-top: 3px solid black;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.header-img{
+    position: relative;
+    width: 100vw;
+    height: 80vh;
+    background: url("images/1.jpg");
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/****** navbar ********/
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 12vw;
+    border: 1px solid #ccc;
+    padding: 40px 30px;
+    background: white;
+    border-top: 3px solid green;
+}
+.navbar h2{
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 20px;
+}
+.navbar ul{
+    list-style: none;
+    color: #444;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar ul a{
+    text-decoration: none;
+}
+.navbar ul li:hover{
+    color: blue;
+    font-weight: bold;
+}
+.navbar ul li{
+    padding-bottom: 12px;
+    color: #999;
+    display: block;
+}
+
+
+/* ******* Section ****** */
+section {
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+    padding: 60px 5vw;
+}
+.section-heading{
+    justify-self: end;
+    font-size: 2em;
+    padding-right: 45px;
+    font-family: corbel;
+}
+.section-content{
+    padding-right: 10vw;
+    color: #666;
+    word-spacing: 0.3em;
+    line-height: 1.3em;
+    font-family: ink free;
+}
+.section-content h2{
+    color: #333;
+}
+.hometown-img{
+    width: 100%;
+}
+
+section:nth-child(even){
+    background-color: rgb(243, 243, 243);
+}
+
+.showcase{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 120px);
+    grid-auto-rows: 120px;
+    grid-gap: 20px;
+    overflow: hidden;
+}
+
+.showcase img{
+    width: 100%;
+    border-style: double;
+    border-width: 8px;
+    border-color: rgb(207, 207, 247);
+}
+
+/* journals */
+
+.card{
+    border: 1px solid #ccc;
+    padding: 40px 20px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.card-heading{
+    color: #222;
+    font-family: cursive;
+    font-size: 1.2em;
+}
+.card-info{
+    font-size: 0.8em;
+    margin: 8px 0px;
+}
+
+.card:hover{
+    background-color: #eee;
+}
+
+/* contact */
+
+.contact-input{
+    width: 100%;
+    display: block;
+    padding: 10px;
+    margin: 18px 0px;
+}
+#btn1{
+    padding: 10px 20px;
+    background-color: #25c484;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#btn1:hover{
+    background-color: #b5b5b5;
+    color: white;
+}
+
+@media(max-width: 700px){
+    .navbar{
+        left: 10px;
+    }
+
+}
